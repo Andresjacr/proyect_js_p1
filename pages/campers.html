@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestión de Campers</title>
+
+    <link rel="stylesheet" href="../css/general.css">
+    <link rel="stylesheet" href="../css/campers.css">
+</head>
+<body>
+
+    <h1>Gestión de Campers</h1>
+
+    <section class="form-section">
+        <form id="camperForm">
+
+            <input type="hidden" id="editIndex">
+
+            <input type="text" id="id" placeholder="Identificación" required>
+            <input type="text" id="nombres" placeholder="Nombres" required>
+            <input type="text" id="apellidos" placeholder="Apellidos" required>
+            <input type="text" id="direccion" placeholder="Dirección" required>
+            <input type="text" id="acudiente" placeholder="Acudiente" required>
+            <input type="text" id="telefonoCel" placeholder="Teléfono Celular" required>
+            <input type="text" id="telefonoFijo" placeholder="Teléfono Fijo" required>
+
+            <select id="estado">
+                <option>En proceso de ingreso</option>
+                <option>Inscrito</option>
+                <option>Aprobado</option>
+                <option>Cursando</option>
+                <option>Graduado</option>
+                <option>Expulsado</option>
+                <option>Retirado</option>
+            </select>
+
+            <button type="submit">Guardar</button>
+        </form>
+    </section>
+
+    <section>
+        <table id="tablaCampers">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Estado</th>
+                    <th>Riesgo</th>
+                    <th>Acciones</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </section>
+
+    <script src="../js/storage.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/campers.js"></script>
+
+</body>
+</html>
